@@ -18,13 +18,13 @@ public class Car  implements Comparable<Car> {
 		this.price = price;
 	}
 
-//to display the values instead of Hashcode
+	//to display the values instead of Hashcode
 	@Override
 	public String toString() {
 		return "Car [make=" + make + ", model=" + model + ", year=" + year + ", price=" + price + "]";
 	}
 
-//to ensure that equality is maintained
+	//to ensure that equality is maintained
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -34,7 +34,7 @@ public class Car  implements Comparable<Car> {
 		return result;
 	}
 
-	//to ensure that equality is maintained
+	
 
 	@Override
 	public boolean equals(Object obj) {
@@ -56,7 +56,7 @@ public class Car  implements Comparable<Car> {
 	}
 
 	
-	
+	//overridden compareTo method to sort based on 'make' 
 	@Override
 	public int compareTo(Car car) {
 		
